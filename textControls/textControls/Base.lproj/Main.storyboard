@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="textControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxP-p2-EDu">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OBJ-lo-Fxs">
+                                        <rect key="frame" x="8" y="8" width="584" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="kjD-KK-MGW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="ExZ-b4-XHk"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dolor sit " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yv1-6U-CXW">
+                                        <rect key="frame" x="8" y="275" width="584" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="2Pe-Sh-Yho"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Vxc-zD-8Gq"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="consectetaur cillium adipisicing pecu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fkK-Rr-94d">
+                                        <rect key="frame" x="8" y="542" width="584" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="G69-Dr-TbS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="dq1-UB-UtI"/>
+                                        </connections>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9v3-Uq-1lc">
+                                        <rect key="frame" x="8" y="313" width="584" height="221"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="76C-kE-kj0"/>
+                                        </connections>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="9v3-Uq-1lc" firstAttribute="top" secondItem="yv1-6U-CXW" secondAttribute="bottom" constant="8" id="1c7-N0-8eU"/>
+                                    <constraint firstItem="fkK-Rr-94d" firstAttribute="top" secondItem="9v3-Uq-1lc" secondAttribute="bottom" constant="8" id="5X4-Yu-vec"/>
+                                    <constraint firstItem="fkK-Rr-94d" firstAttribute="leading" secondItem="vxP-p2-EDu" secondAttribute="leading" constant="8" id="8sM-pB-Bp3"/>
+                                    <constraint firstAttribute="trailing" secondItem="yv1-6U-CXW" secondAttribute="trailing" constant="8" id="9DY-e3-P9J"/>
+                                    <constraint firstAttribute="trailing" secondItem="fkK-Rr-94d" secondAttribute="trailing" constant="8" id="CWZ-AW-6Sb"/>
+                                    <constraint firstItem="9v3-Uq-1lc" firstAttribute="leading" secondItem="vxP-p2-EDu" secondAttribute="leading" constant="8" id="Emu-xG-bNt"/>
+                                    <constraint firstItem="OBJ-lo-Fxs" firstAttribute="top" secondItem="vxP-p2-EDu" secondAttribute="top" constant="8" id="Gr7-Wd-K7h"/>
+                                    <constraint firstAttribute="bottom" secondItem="fkK-Rr-94d" secondAttribute="bottom" constant="8" id="PMd-Oe-fWk"/>
+                                    <constraint firstAttribute="trailing" secondItem="9v3-Uq-1lc" secondAttribute="trailing" constant="8" id="RJE-Jg-jQd"/>
+                                    <constraint firstAttribute="trailing" secondItem="OBJ-lo-Fxs" secondAttribute="trailing" constant="8" id="bZM-Zk-Eed"/>
+                                    <constraint firstItem="yv1-6U-CXW" firstAttribute="leading" secondItem="vxP-p2-EDu" secondAttribute="leading" constant="8" id="hju-SD-XGj"/>
+                                    <constraint firstItem="OBJ-lo-Fxs" firstAttribute="leading" secondItem="vxP-p2-EDu" secondAttribute="leading" constant="8" id="kA7-y4-4Wg"/>
+                                    <constraint firstItem="yv1-6U-CXW" firstAttribute="centerY" secondItem="vxP-p2-EDu" secondAttribute="centerY" id="v5h-8e-PtV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vxP-p2-EDu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4AW-aJ-DAF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vxP-p2-EDu" secondAttribute="bottom" id="SV1-mn-5kP"/>
+                            <constraint firstAttribute="trailing" secondItem="vxP-p2-EDu" secondAttribute="trailing" id="mcM-iO-fcz"/>
+                            <constraint firstItem="vxP-p2-EDu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="s9h-4A-lEg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomTextView" destination="9v3-Uq-1lc" id="3ab-SS-QF8"/>
+                        <outlet property="bottomTextfield" destination="fkK-Rr-94d" id="j3l-FO-mwS"/>
+                        <outlet property="fullContainer" destination="vxP-p2-EDu" id="Jig-0B-lEM"/>
+                        <outlet property="fullContainerBottomConstraint" destination="SV1-mn-5kP" id="O6n-Mi-cgb"/>
+                        <outlet property="fullContainerTopConstraint" destination="s9h-4A-lEg" id="xSc-tA-MO9"/>
+                        <outlet property="middleTextfield" destination="yv1-6U-CXW" id="adt-ZY-Lpb"/>
+                        <outlet property="topTextfield" destination="OBJ-lo-Fxs" id="Ik8-cc-Zoy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="310"/>
+        </scene>
+    </scenes>
+</document>

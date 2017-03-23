@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AccessoryInputView" customModule="textControls" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4z-yJ-EbZ">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vtj-rI-3tq">
+                            <rect key="frame" x="4" y="4" width="538" height="62"/>
+                            <color key="backgroundColor" red="0.91953125000000002" green="0.92976831896551582" blue="0.95199353448275859" alpha="0.80252659569999996" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.022494612069999999" green="0.06998922414" blue="0.10767780170000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aP-FP-BLv">
+                            <rect key="frame" x="546" y="0.0" width="54" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54" id="A12-SC-cnd"/>
+                            </constraints>
+                            <state key="normal" title="Listo"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="vtj-rI-3tq" secondAttribute="bottom" constant="4" id="7IQ-he-jjB"/>
+                        <constraint firstAttribute="trailing" secondItem="0aP-FP-BLv" secondAttribute="trailing" id="Rg8-4X-GiY"/>
+                        <constraint firstItem="0aP-FP-BLv" firstAttribute="leading" secondItem="vtj-rI-3tq" secondAttribute="trailing" constant="4" id="YFB-eV-o4o"/>
+                        <constraint firstItem="0aP-FP-BLv" firstAttribute="top" secondItem="O4z-yJ-EbZ" secondAttribute="top" id="c9M-Q1-btv"/>
+                        <constraint firstAttribute="bottom" secondItem="0aP-FP-BLv" secondAttribute="bottom" id="cmM-9l-lTZ"/>
+                        <constraint firstItem="vtj-rI-3tq" firstAttribute="top" secondItem="O4z-yJ-EbZ" secondAttribute="top" constant="4" id="yMW-LU-YYh"/>
+                        <constraint firstItem="vtj-rI-3tq" firstAttribute="leading" secondItem="O4z-yJ-EbZ" secondAttribute="leading" constant="4" id="yvc-c5-jUa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="O4z-yJ-EbZ" secondAttribute="trailing" id="COH-at-PR8"/>
+                <constraint firstAttribute="bottom" secondItem="O4z-yJ-EbZ" secondAttribute="bottom" id="DOO-M5-h4v"/>
+                <constraint firstItem="O4z-yJ-EbZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="F0E-Oi-fpa"/>
+                <constraint firstItem="O4z-yJ-EbZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pJd-CS-wyA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="doneButton" destination="0aP-FP-BLv" id="tFN-OG-Alm"/>
+                <outlet property="fullContainer" destination="O4z-yJ-EbZ" id="QM4-2c-lMf"/>
+                <outlet property="textview" destination="vtj-rI-3tq" id="Hsi-ro-Pgp"/>
+            </connections>
+            <point key="canvasLocation" x="526" y="190"/>
+        </view>
+    </objects>
+</document>
